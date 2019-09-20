@@ -7,11 +7,10 @@
         "strict": true,
         "typeRoots": [
             "./node_modules/@types",
-            "./localtypings"
+            "./src/localtypings"
         ]
     },
     "include": [
-        "localtypings",
         "src"
     ],
     "exclude": [
