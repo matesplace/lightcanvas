@@ -5,13 +5,13 @@ A Node.js library for streaming a HTML Canvas drawing to devices using the E1.31
 
 ## Installation
 
-```
+```bash
 npm install lightcanvas
 ```
 
 ## Example Usage
 
-```
+```js
 var LightCanvas = require('lightcanvas');
 var canvas = new LightCanvas(width, height, hostname);
 
