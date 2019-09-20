@@ -1,0 +1,34 @@
+{
+    "name": "lightcanvas",
+    "version": "0.0.1",
+    "description": "A light canvas",
+    "main": "lib/index.js",
+    "types": "lib/index.d.ts",
+    "scripts": {
+        "prepare" : "npm run build",
+        "prepublishOnly" : "npm test && npm run lint",
+        "preversion" : "npm run lint",
+        "build": "tsc",
+        "lint": "tslint -p tsconfig.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/matesplace/lightcanvas.git"
+    },
+    "keywords": ["e131", "lights", "canvas"],
+    "author": "Sam El-Husseini",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/matesplace/lightcanvas/issues"
+    },
+    "homepage": "https://github.com/matesplace/lightcanvas#readme",
+    "dependencies": {
+        "e131": "^1.1.3",
+        "canvas": "^2.6.0",
+        "raf": "^3.4.1"
+    },
+    "devDependencies": {
+        "tslint": "^5.20.0",
+        "typescript": "^3.6.3"
+    }
+}
