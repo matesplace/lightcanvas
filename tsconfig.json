@@ -4,9 +4,14 @@
         "module": "commonjs",
         "declaration": true,
         "outDir": "./lib",
-        "strict": true
+        "strict": true,
+        "typeRoots": [
+            "./node_modules/@types",
+            "./localtypings"
+        ]
     },
     "include": [
+        "localtypings",
         "src"
     ],
     "exclude": [

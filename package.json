@@ -5,17 +5,22 @@
     "main": "lib/index.js",
     "types": "lib/index.d.ts",
     "scripts": {
-        "prepare" : "npm run build",
-        "prepublishOnly" : "npm test && npm run lint",
-        "preversion" : "npm run lint",
+        "prepare": "npm run build",
+        "prepublishOnly": "npm run lint",
+        "preversion": "npm run lint",
         "build": "tsc",
+        "test": "node tests/index.js",
         "lint": "tslint -p tsconfig.json"
     },
     "repository": {
         "type": "git",
         "url": "git+https://github.com/matesplace/lightcanvas.git"
     },
-    "keywords": ["e131", "lights", "canvas"],
+    "keywords": [
+        "e131",
+        "lights",
+        "canvas"
+    ],
     "author": "Sam El-Husseini",
     "license": "MIT",
     "bugs": {
@@ -29,6 +34,7 @@
     },
     "devDependencies": {
         "tslint": "^5.20.0",
-        "typescript": "^3.6.3"
+        "typescript": "^3.6.3",
+        "@types/node": "^12.7.5"
     }
 }
