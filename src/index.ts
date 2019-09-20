@@ -82,7 +82,7 @@ class LightCanvas {
             slotsData[i * LightCanvas.DATA_PER_PIXEL + 2] = blue;
         }
 
-        console.log(packet.getUniverse(), slotsData.toString('hex'));
+        // console.log(packet.getUniverse(), slotsData.toString('hex'));
         this.client.send(packet, () => {
             // console.log('sent packet');
         });
